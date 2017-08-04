@@ -1,7 +1,6 @@
 ---
 title: "Plotly Test"
 output: github_document
-always_allow_html: yes
 htmlwidgets: TRUE
 ---
 
@@ -12,7 +11,7 @@ library(plotly)
 
 ## R Markdown
 
-```{r plotlyTest}
+```{r plotlyTest, warning = FALSE}
 library(plotly)
 set.seed(100)
 d <- diamonds[sample(nrow(diamonds), 1000), ]
