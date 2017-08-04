@@ -1,8 +1,6 @@
 ---
 title: "Plotly Test"
-output: html_document
-htmlwidgets: TRUE
-always_allow_html: yes
+output: github_document
 ---
 
 ## R Markdown
