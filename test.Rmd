@@ -1,22 +1,15 @@
 ---
 title: "Plotly Test"
-output: github_document
+output: html_document
 htmlwidgets: TRUE
 always_allow_html: yes
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(plotly)
-```
-
 ## R Markdown
 
-```{r plotlyTest}
-library(dplyr)
+```{r plotlyTest, warning = FALSE, message = FALSE, echo = TRUE}
 library(plotly)
-plotly::ggplotly(mtcars %>% 
-  ggplot(aes(mpg, disp)) +
-  geom_point())
-  
+library(htmlwidgets)
+p <- plot_ly(economics, x = ~date, y = ~unemploy / pop)
+p
 ```
