@@ -1,6 +1,8 @@
 ---
 title: "Plotly Test"
-output: html_document
+output: github_document
+always_allow_html: yes
+htmlwidgets: TRUE
 ---
 
 ```{r setup, include=FALSE}
