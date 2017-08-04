@@ -14,9 +14,9 @@ When rendered using `rmarkdown` `plotly` doesn't acutally render the chart to gi
 
 Instead you can use the code below to send data to plotly render it and embed an `iframe` that will print on a github page.
 
-<iframe src="https://plot.ly/~chipoglesby/4.embed" width="800" height="600" id="igraph" scrolling="no" seamless="seamless" frameBorder="0">
-</iframe>
-That will create the data you need in `plotly`. You can then run this code:
+`(m <- api_create(mtcars))` That will create the data you need in `plotly`. 
+
+You can then run this code:
 
 `paste('<iframe width="900" height="800" frameborder="0" scrolling="no" src="', m$embed_url, '"></iframe>', sep = "")`
 
